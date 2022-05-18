@@ -92,3 +92,7 @@ st.write('---')
 plt.title('Feature importance based on SHAP values (Bar)')
 shap.summary_plot(shap_values, X, plot_type="bar")
 st.pyplot(bbox_inches='tight')
+
+plt.title('Feature importance based on SHAP values (violin)')
+shap.summary_plot(shap_values,X,plot_type='violin')
+st.pyplot(bbox_inches='tight')
