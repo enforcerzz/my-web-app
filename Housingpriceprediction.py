@@ -48,14 +48,14 @@ def user_input_features():
             'INDUS': INDUS,
             'CHAS': CHAS,
             'NOX': NOX,
-            'RM': RM,
+            'no. of rooms': RM,
             'AGE': AGE,
             'DIS': DIS,
             'RAD': RAD,
             'TAX': TAX,
             'PTRATIO': PTRATIO,
             'B': B,
-            'LSTAT': LSTAT}
+            'housing area(in sq.ft)': LSTAT}
     features = pd.DataFrame(data, index=[0])
     return features
 
