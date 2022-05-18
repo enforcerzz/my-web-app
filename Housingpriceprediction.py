@@ -31,7 +31,7 @@ st.sidebar.header('Specify Input Parameters')
 
 def user_input_features():
     CRIM = st.sidebar.slider('Crime rate', float(X.CRIM.min()), float(X.CRIM.max()), float(X.CRIM.mean()))
-    ZN = st.sidebar.slider('ZN', float(X.ZN.min()), float(X.ZN.max()), float(X.ZN.mean()))
+    ZN = st.sidebar.slider('Proportion of residential land zoned for lots over 25,000 sq.ft.', float(X.ZN.min()), float(X.ZN.max()), float(X.ZN.mean()))
     INDUS = st.sidebar.slider('INDUS', float(X.INDUS.min()), float(X.INDUS.max()), float(X.INDUS.mean()))
     CHAS = st.sidebar.slider('CHAS', float(X.CHAS.min()), float(X.CHAS.max()), float(X.CHAS.mean()))
     NOX = st.sidebar.slider('NOX', float(X.NOX.min()), float(X.NOX.max()), float(X.NOX.mean()))
